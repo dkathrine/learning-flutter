@@ -1,4 +1,3 @@
-.DS_Store
 # Miscellaneous
 *.class
 *.log
@@ -12,12 +11,6 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
-*android/
-*linux/
-*macos/
-*web/
-*windows/
-*ios/
 
 # IntelliJ related
 *.iml
@@ -50,5 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-*.metadata
-*analysis_options.yaml
