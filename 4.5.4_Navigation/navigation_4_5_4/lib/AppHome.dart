@@ -28,6 +28,7 @@ class _AppHomeState extends State<AppHome> {
             currentIndex = index;
           });
         },
+        selectedIndex: currentIndex,
         destinations: <Widget>[
           NavigationDestination(icon: Icon(Icons.newspaper), label: 'News'),
           NavigationDestination(icon: Icon(Icons.favorite), label: 'Likes'),
