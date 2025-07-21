@@ -5,11 +5,16 @@ class NewsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('News', style: TextStyle(fontSize: 24)),
-        Icon(Icons.newspaper, size: 44),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('News', style: TextStyle(fontSize: 30)),
+            Icon(Icons.newspaper, size: 50),
+          ],
+        ),
       ],
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_4_5_4/AppHome.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,8 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(body: Center(child: Placeholder())),
-    );
+    return MaterialApp(home: AppHome());
   }
 }

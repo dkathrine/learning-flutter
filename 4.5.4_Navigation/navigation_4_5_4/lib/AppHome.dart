@@ -22,6 +22,19 @@ class _AppHomeState extends State<AppHome> {
         backgroundColor: Colors.lime,
         centerTitle: true,
       ),
+      bottomNavigationBar: NavigationBar(
+        onDestinationSelected: (int index) {
+          setState(() {
+            currentIndex = index;
+          });
+        },
+        destinations: <Widget>[
+          NavigationDestination(icon: Icon(Icons.newspaper), label: 'News'),
+          NavigationDestination(icon: Icon(Icons.favorite), label: 'Likes'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+      ),
+      body: screens[currentIndex],
     );
   }
 }

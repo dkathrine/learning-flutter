@@ -7,14 +7,19 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(top: 20, left: 24, right: 24),
-      child: Column(
-        spacing: 20,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Profile', style: TextStyle(fontSize: 32)),
           Column(
+            spacing: 20,
             children: [
-              Icon(Icons.person, size: 50),
-              Text('Max Mustermann', style: TextStyle(fontSize: 28)),
+              Text('Profile', style: TextStyle(fontSize: 32)),
+              Column(
+                children: [
+                  Icon(Icons.person, size: 50),
+                  Text('Max Mustermann', style: TextStyle(fontSize: 28)),
+                ],
+              ),
             ],
           ),
         ],
