@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:navigation_4_5_4/NewsScreen.dart';
-import 'package:navigation_4_5_4/LikesScreen.dart';
-import 'package:navigation_4_5_4/ProfileScreen.dart';
+import 'package:navigation_4_5_4/news_screen.dart';
+import 'package:navigation_4_5_4/likes_screen.dart';
+import 'package:navigation_4_5_4/profile_screen.dart';
 
 class AppHome extends StatefulWidget {
   const AppHome({super.key});
