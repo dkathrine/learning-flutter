@@ -39,7 +39,9 @@ class _MainAppState extends State<MainApp> {
         ),
       );
     } else {
-      print('wrong login credentials');
+      print(
+        'WRONG login credentials: ${usernameController.text.trim()}, ${passwordController.text.trim()}',
+      );
     }
   }
 
