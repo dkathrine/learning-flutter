@@ -27,6 +27,8 @@ class _MainAppState extends State<MainApp> {
       print(
         "LOGIN CREDENTIALS: ${usernameController.text.trim()}, ${passwordController.text.trim()}",
       );
+      usernameController.clear();
+      passwordController.clear();
       Navigator.push(
         context,
         MaterialPageRoute(
