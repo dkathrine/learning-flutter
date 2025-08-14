@@ -34,7 +34,7 @@ class _MainAppState extends State<MainApp> {
         MaterialPageRoute(
           builder: (BuildContext context) {
             return Scaffold(
-              appBar: AppBar(title: Center(child: Text('Success'))),
+              appBar: AppBar(centerTitle: true, title: Text('Success')),
               body: Success(),
             );
           },
@@ -50,7 +50,7 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text('Login'))),
+      appBar: AppBar(centerTitle: true, title: Text('Login')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
